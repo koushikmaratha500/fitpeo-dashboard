@@ -7,6 +7,8 @@ import { Layout } from './layout'
 // Pages
 const DashboardPage = lazy(() => import('src/pages/Dashboard'))
 const Page404 = lazy(() => import('src/pages/PageNotFound'))
+// components
+import { FallbackLoader } from './components/FallbackLoader'
 
 const App: React.FC = () => {
   const routes = createBrowserRouter([
@@ -16,7 +18,7 @@ const App: React.FC = () => {
     },
     {
       path: '',
-      element: <Suspense><Layout><Outlet /></Layout></Suspense>,
+      element: <Suspense fallback={<FallbackLoader />}><Layout><Outlet /></Layout></Suspense>,
       children: [
         {
           path: 'dashboard',
