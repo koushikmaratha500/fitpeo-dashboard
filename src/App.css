@@ -1,0 +1,22 @@
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+/* custom-scrollbar.css */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(107, 114, 128, 0.8); /* Tailwind's gray-500 with opacity */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(75, 85, 99, 0.8); /* Tailwind's gray-700 with opacity */
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(229, 231, 235, 0.8); /* Tailwind's gray-200 with opacity */
+  border-radius: 9999px;
+}
