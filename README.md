@@ -34,7 +34,7 @@ FitPeo Dashboard is a responsive admin panel built with React and TailwindCSS. T
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/fitpeo-dashboard.git
+   git clone https://github.com/koushikmaratha500/fitpeo-dashboard.git
    cd fitpeo-dashboard
    ```
 2. Install the dependencies:
