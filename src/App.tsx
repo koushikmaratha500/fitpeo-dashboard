@@ -16,7 +16,7 @@ const App: React.FC = () => {
     },
     {
       path: '',
-      element: <Suspense><Layout ><Outlet /></Layout></Suspense>,
+      element: <Suspense><Layout><Outlet /></Layout></Suspense>,
       children: [
         {
           path: 'dashboard',
