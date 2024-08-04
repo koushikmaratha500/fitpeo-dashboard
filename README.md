@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+# FitPeo Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![FitPeo Dashboard](./fitpeo-ui.jpg)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+FitPeo Dashboard is a responsive admin panel built with React and TailwindCSS. The dashboard is designed to provide an intuitive user experience with various metrics and data visualizations.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Dashboard Overview**: Displays total orders, total delivered, total canceled, total revenue, net profit, and more.
+- **Activity Graph**: Shows activity metrics over time.
+- **Recent Orders**: Lists recent orders with details like customer name, order number, amount, and status.
+- **Customer Feedback**: Displays customer reviews and ratings.
+- **Goals and Popular Dishes**: Provides quick access to goals, popular dishes, and menus.
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Frontend**: React, TypeScript, TailwindCSS
+- **Charts**: ECharts, echarts-for-react
+- **Icons**: React Icons
+- **Routing**: React Router DOM
+- **State Management**: Lodash (for utility functions)
+- **UI Components**: Headless UI (for unstyled accessible components)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 14.x or later)
+- npm (version 6.x or later)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/fitpeo-dashboard.git
+   cd fitpeo-dashboard
+   ```
+2. Install the dependencies:
+   ```sh
+   npm i
+   ```
+3. Running the dev server:
+   ```sh
+   npm run start
+   ```
+4. Building for production:
+   ```sh
+   npm run build
+   ```
+5. preview the production build:
+   ```sh
+   npm run preview
+   ```
