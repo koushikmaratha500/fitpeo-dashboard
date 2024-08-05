@@ -13,14 +13,15 @@ interface IProps {
     type: 'raise' | 'fall'
     cardValue: string
     raiseFallValue: string
+    cardTitle: string
 }
-export const DashboardCard: React.FC<IProps> = ({ Icon, iconBgColor, iconColor, type, cardValue, raiseFallValue }) => {
+export const DashboardCard: React.FC<IProps> = ({ Icon, iconBgColor, iconColor, type, cardValue, raiseFallValue, cardTitle }) => {
     return (
         <div className="bg-gray-800 p-4 rounded-lg text-white">
             <div className={twMerge('w-12 h-12 rounded-md flex justify-center items-center my-1', `${iconBgColor}`)}>
                 <Icon className={twMerge('w-8 h-8', `${iconColor}`)} />
             </div>
-            <p className='mb-3'>Total Orders</p>
+            <p className='mb-3'>{cardTitle}</p>
             <div className='flex justify-between items-center'>
                 <span className='font-bold text-3xl'>{cardValue}</span>
                 {type === 'fall' ? <div className='inline-flex text-red-500'>

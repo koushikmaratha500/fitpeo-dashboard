@@ -22,10 +22,10 @@ const Dashboard: React.FC = () => {
             <h2 className='text-white text-2xl font-semibold mb-2'>Dashboard</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
                 <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <DashboardCard Icon={TbBasketPlus} iconBgColor='bg-[#293562]' iconColor='text-[#4166f6]' type='fall' cardValue='75' raiseFallValue='3%' />
-                    <DashboardCard Icon={TbShoppingBagCheck} iconBgColor='bg-[#234a46]' iconColor='text-[#00ca8c]' type='raise' cardValue='75' raiseFallValue='3%' />
-                    <DashboardCard Icon={TbShoppingBagX} iconBgColor='bg-[#633333]' iconColor='text-[#f25e5d]' type='raise' cardValue='70' raiseFallValue='3%' />
-                    <DashboardCard Icon={TbReportMoney} iconBgColor='bg-[#592e4a]' iconColor='text-[#e542a0]' type='fall' cardValue='60' raiseFallValue='3%' />
+                    <DashboardCard cardTitle='Total Orders' Icon={TbBasketPlus} iconBgColor='bg-[#293562]' iconColor='text-[#4166f6]' type='fall' cardValue='75' raiseFallValue='3%' />
+                    <DashboardCard cardTitle='Total Dashboard' Icon={TbShoppingBagCheck} iconBgColor='bg-[#234a46]' iconColor='text-[#00ca8c]' type='raise' cardValue='70' raiseFallValue='3%' />
+                    <DashboardCard cardTitle='Total Cancelled' Icon={TbShoppingBagX} iconBgColor='bg-[#633333]' iconColor='text-[#f25e5d]' type='raise' cardValue='05' raiseFallValue='3%' />
+                    <DashboardCard cardTitle='Total Revenue' Icon={TbReportMoney} iconBgColor='bg-[#592e4a]' iconColor='text-[#e542a0]' type='fall' cardValue='$12k' raiseFallValue='3%' />
                 </div>
                 <div className="bg-gray-800 p-4 rounded-lg text-white lg:col-span-1 flex flex-row justify-between">
                     <NetProfit profitValue={4600.20} progresValue={90} raiseFallValue='4%' type='raise' />
