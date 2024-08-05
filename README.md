@@ -19,6 +19,7 @@ FitPeo Dashboard is a responsive admin panel built with React and TailwindCSS. T
 - **Frontend**: React, TypeScript, TailwindCSS
 - **Charts**: ECharts, echarts-for-react
 - **Icons**: React Icons
+- **Colors**: Coolers [Click here](https://coolors.co/palettes/popular/black)
 - **Routing**: React Router DOM
 - **State Management**: Lodash (for utility functions)
 - **UI Components**: Headless UI (for unstyled accessible components)
